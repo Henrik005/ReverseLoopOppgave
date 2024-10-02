@@ -24,6 +24,7 @@ app.innerHTML = /*HTML*/ `<div>${reversedText}</div> <input onchange="storedText
 
 //Controller
 function reverseString(){
+    //Not entirely my own code, big suprise there, gonna use it to experiment with for() and how it works
     for(let i = storedText.length -1; i >= 0; i--) { reversedText += storedText[i];}
     updateView();
 }
